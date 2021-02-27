@@ -1,0 +1,1 @@
+"use strict";var t=30,time=$(".countdown");function fun(){t--,time.html(t),t<=0&&(clearInterval(inter),window.close())}var inter=setInterval("fun()",1e3);

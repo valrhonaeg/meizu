@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/car.css">
+</head>
+<body>
+    <header id="head">
+        <div class="head common">
+            <div class="le1">
+                <a href="../index.html"><img src="../img/zhuce/logo.png" alt=""></a>
+            </div>
+            <div class="ri1">
+                <ul class="le2">
+                    <li>购物车 ></li>
+                    <li>确认订单 ></li>
+                    <li>在线支付 ></li>
+                    <li>完成</li>
+                </ul>
+                <ul class="ri2">
+                    <li>我的订单</li>
+                    <li><a href="./login.html">登录</a></li>
+                    <li><a href="./zhuce.html">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        
+        <div class="main common">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" class="allChecked"> 全选
+                            </label>
+                            <div class="panel_right">
+                                <a href="#" style="margin-right: 50px;">商品种类<span class="badge species">1</span></a>
+                                <a href="#">所选商品数量<span class="badge number">3</span></a>
+                            </div>
+                        </h3>
+                    </div>
+        
+                    <div class="panel-body">
+                        <!-- <div class="media">
+                    <div class="media-left">
+                        <a href="#" class="media_left">
+                            <input type="checkbox" ${item.is_select ? "checked" :''} class="checked" idx="${item.id}">
+                            <img class="media-object" style="width: 100px;"
+                                src="${item.goods_logo}"
+                                alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <div class="media_body_left">
+                            <h4 class="media-heading">${item.goods_name}</h4>
+                            <div class="price">
+                                <i class="glyphicon glyphicon-yen"></i>
+                                <span>${item.goods_price}</span>
+                            </div>
+                        </div>
+                        <div class="media_body_center">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default reduce" idx="${item.id}">-</button>
+                                <button type="button" class="btn btn-default">${item.goods_num}</button>
+                                <button type="button" class="btn btn-default add" idx="${item.id}">+</button>
+                            </div>
+                        </div>
+                        <div class="media_body_right">
+                            <span class="item_total">小计:￥${total.toFixed(2)}</span>
+                            <span idx="${item.goods_id}" class="glyphicon glyphicon-remove del"></span>
+                        </div>
+                    </div>
+                </div> -->
+                    </div>
+        
+                    <div class="panel-footer">
+                        <span>总价格:￥<span class="total">32432</span></span>
+                        <button class="btn btn-info settlement">结算</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="foot">
+        <div class="foot common">
+            <div class="foot_top">
+                <div class="tu">
+                    <ul>
+                        <li><img src="../img/shouye/foot_top_tu_1.png" alt=""><span>满80免运费</span></img></li>
+                        <li><img src="../img/shouye/foot_top_tu_2.png" alt=""><span>满80免运费</span></img></li>
+                        <li><img src="../img/shouye/foot_top_tu_3.png" alt=""><span>满80免运费</span></img></li>
+                        <li><img src="../img/shouye/foot_top_tu_4.png" alt=""><span>满80免运费</span></img></li>
+                        <li><img src="../img/shouye/foot_top_tu_5.png" alt=""><span>满80免运费</span></img></li>
+                        <li><img src="../img/shouye/foot_top_tu_5.png" alt=""><span>满80免运费</span></img></li>
+                    </ul>
+                </div>
+                <div class="kefu">
+                    <span>周一至周日 8：00 - 20：00</span>
+                    <span>400 - 788 - 3333</span>
+                    <span>在线客服</span>
+                </div>
+            </div>
+            <div class="foot_bottom">
+                <ul>
+                    <li><a href="">了解魅族</a></li>
+                    <li><a href="">加入我们</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">Flyme</a></li>
+                    <li><a href="">魅族社区</a></li>
+                    <li><a href="">天猫旗舰店</a></li>
+                    <li><a href="">问题反馈</a></li>
+                    <li><a href="">线上销售授权名单公示</a></li>
+                    <li><a href="">出版物经营许可证</a></li>
+                    <li><a href="">简体中文</a></li>
+                </ul>
+                <p>©2020 Meizu Telecom Equipment Co., Ltd. All rights reserved. 粤ICP备13003602号合字B2-20170010
+                    营业执照法律声明粤公网安备 44049102496009 号</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/car.js"></script>
+</body>
+</html>

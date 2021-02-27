@@ -1,0 +1,201 @@
+.common {
+  width: 1240px;
+}
+
+#head {
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+}
+#head .head {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#head .head > ul {
+  display: flex;
+  width: 830px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+#head .head > ul > li > a {
+  color: #000;
+}
+#head .head .inset {
+  display: none;
+}
+#head .head > input {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+#head .head > a {
+  margin: 0px 5px;
+}
+
+#main {
+  width: 100%;
+  margin-top: 20px;
+}
+#main .main .container {
+  border: 1px solid #ccc;
+}
+#main .main .container .breadcrumb {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#main .main .container .media .media-left {
+  position: relative;
+}
+#main .main .container .media .media-left .show1 {
+  position: relative;
+}
+#main .main .container .media .media-left .show1 .media-object {
+  width: 300px;
+}
+#main .main .container .media .media-left .show1 .mask {
+  width: 150px;
+  height: 150px;
+  background-color: yellowgreen;
+  opacity: 0.4;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+#main .main .container .media .media-left .enlarge {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  background-size: 750px 1000px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+  z-index: 3;
+  display: none;
+}
+#main .main .container .media .media-body > h4 {
+  font-size: 30px;
+}
+#main .main .container .media .media-body > p {
+  font-size: 20px;
+}
+#main .main .container .media .media-body > p > span {
+  color: red;
+}
+#main .main .container .media .media-body .price {
+  font-size: 40px;
+  color: #d40101;
+  margin: 10px 0px;
+}
+#main .main .container .media .media-body .btn-group {
+  margin-bottom: 20px;
+}
+#main .main .container .media .media-body .btn-group button {
+  outline: none;
+}
+#main .main .container .media .media-body .btn_buy {
+  display: flex;
+  justify-content: flex-start;
+}
+#main .main .container .media .media-body .btn_buy .btn-warning {
+  background: #c20d0d;
+  border: 1px solid #c20d0d;
+  width: 300px;
+  border-radius: 5px 0px 0px 5px;
+}
+#main .main .container .media .media-body .btn_buy .btn-danger {
+  background: #2b80ff;
+  border: 1px solid #2b80ff;
+  width: 200px;
+  border-radius: 0px 5px 5px 0px;
+}
+#main .main .container .goods_detail .img_detail {
+  width: 100%;
+}
+
+#foot {
+  width: 100%;
+}
+#foot .foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#foot .foot a,
+#foot .foot span,
+#foot .foot p {
+  color: #a7a6a6;
+}
+#foot .foot .foot_top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0px 20px 0px;
+}
+#foot .foot .foot_top .tu > ul {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  height: 69px;
+}
+#foot .foot .foot_top .tu > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#foot .foot .foot_top .tu > ul > li > img {
+  width: 60%;
+}
+#foot .foot .foot_top .kefu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#foot .foot .foot_top .kefu > span:nth-of-type(1) {
+  font-size: 12px;
+}
+#foot .foot .foot_top .kefu > span:nth-of-type(2) {
+  font-size: 28px;
+  color: #2b80ff;
+}
+#foot .foot .foot_top .kefu > span:nth-of-type(3) {
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  width: 90px;
+  height: 30px;
+  background: #2b80ff;
+  color: #fff;
+  border-radius: 15px;
+}
+#foot .foot .foot_bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+#foot .foot .foot_bottom > ul {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+#foot .foot .foot_bottom > ul > li {
+  border-right: 1px solid #ccc;
+  padding-right: 30px;
+}
+#foot .foot .foot_bottom > ul > li:last-child {
+  border-right: none;
+}
+#foot .foot .foot_bottom > p {
+  margin-bottom: 20px;
+}
+
+.act {
+  background: tomato;
+}
