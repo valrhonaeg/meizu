@@ -1,7 +1,7 @@
 let username = $('#username');
 let password = $('#password');
 // console.log(username.val());
-let user = /^1[3456789]\d{9}$/;
+let user = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
 let pass = /^[0-9a-zA-Z,\.]{1,14}$/
 
 $('#btn').on('click', function (e) {
