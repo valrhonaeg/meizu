@@ -1,3 +1,58 @@
+
+$('#boxx').validate({
+    rules: {
+        username: {
+            required: true,
+            email: true,
+        },
+        password: {
+            required: true
+        }
+    },
+    messages: {
+        username: {
+            required: '请填写用户名',
+            email: '请输入邮箱'
+        },
+        password: {
+            required: '请填写密码',
+        }
+    },
+    submitHandler: function () {
+        let username = $('#username').val();
+
+        let password = $('#password').val();
+
+        $.ajax({
+            url: '../api/login.php',
+            method: 'post',
+            data: {
+                username: username,
+                password: password
+            },
+            success: function (res) {
+                res = JSON.parse(res);
+                if (res.code == 1) {
+                    setCookie('login', username);
+                    // location.href = './index.html';
+
+                    localStorage.setItem('login', username);
+                    let url = localStorage.getItem('url');
+
+                    if (url) {
+                        location.href = url;
+                        localStorage.removeItem('url');
+                        //    open('../index.html')
+                    } else {
+                        location.href = '../index.html';
+                    }
+                } else {
+                    alert('账号或密码不正确');
+                }
+            },
+        });
+    }
+})
 // //获取元素
 // let username = document.querySelector('#username');
 // // let username1 = $('#username')
@@ -88,59 +143,3 @@
 //     //         }
 //     //     }
 //     // })
-
-
-$('#boxx').validate({
-    rules: {
-        username: {
-            required: true,
-            email: true,
-        },
-        password: {
-            required: true
-        }
-    },
-    messages: {
-        username: {
-            required: '请填写用户名',
-            email: '请输入邮箱'
-        },
-        password: {
-            required: '请填写密码',
-        }
-    },
-    submitHandler: function () {
-        let username = $('#username').val();
-
-        let password = $('#password').val();
-
-        $.ajax({
-            url: '../api/login.php',
-            method: 'post',
-            data: {
-                username: username,
-                password: password
-            },
-            success: function (res) {
-                res = JSON.parse(res);
-                if (res.code == 1) {
-                    setCookie('login', username);
-                    // location.href = './index.html';
-
-                    localStorage.setItem('login', username);
-                    let url = localStorage.getItem('url');
-
-                    if (url) {
-                        location.href = url;
-                        localStorage.removeItem('url');
-                        //    open('../index.html')
-                    } else {
-                        location.href = '../index.html';
-                    }
-                } else {
-                    alert('账号或密码不正确');
-                }
-            },
-        });
-    }
-})
