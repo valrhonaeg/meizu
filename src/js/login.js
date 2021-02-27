@@ -1,6 +1,9 @@
 //获取元素
 let username = document.querySelector('#username');
+// let username1 = $('#username')
 let password = document.querySelector('#password');
+// let password1 = $('#password');
+
 let btn1 = document.querySelector('.btn1');
 let btn = document.querySelector('.btn');
 //正则规则
@@ -22,9 +25,10 @@ btn1.onclick = function () {
     }
 }
 
-btn.onclick = function () {
-    // 登录按钮需要稍微按久一点才有效果，快速的点击会没效果，暂时没找到原因
-    pAjax({
+
+
+btn.onclick = async function(){
+    await pAjax({
         url: '../api/login.php',
         type: 'post',
         data: {
@@ -42,6 +46,7 @@ btn.onclick = function () {
 
             if (url) {
                 location.href = url;
+                // open(`${url}`)
                 localStorage.removeItem('url');
                 //    open('../index.html')
             } else {
@@ -51,5 +56,37 @@ btn.onclick = function () {
             alert('账号不存在')
         }
     })
-
 }
+    // 登录按钮需要稍微按久一点才有效果，快速的点击会没效果，暂时没找到原因
+    
+    
+    // $.ajax({
+    //     url:'../api/login.php',
+    //     type:'post',
+    //     data:{
+    //         username:username1.val(),
+    //         password:password1.val()
+    //     },
+    //     dataType:'json',
+    //     async:false,
+    //     success:function(res){
+    //         if (res.code == 1) {
+    //             // 登录成功存储登录的状态
+    //             setCookie('login', username1.val())
+    //             localStorage.setItem('login', username1.val());
+    //             let url = localStorage.getItem('url');
+    
+    //             if (url) {
+    //                 location.href = url;
+    //                 localStorage.removeItem('url');
+    //                 //    open('../index.html')
+    //             } else {
+    //                 location.href = '../index.html';
+    //             }
+    //         } else {
+    //             alert('账号不存在')
+    //         }
+    //     }
+    // })
+
+    

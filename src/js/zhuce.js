@@ -45,10 +45,13 @@ $('#btn2').on('click', function () {
             'password': password.val()
         },
         dataType: 'json',
+        async: false,
         success: function (res) {
             console.log(res);
             alert('注册成功')
-            self.location = './login.html';
+            // self.location = './login.html';
+            open('../html/login.html')
+            // location.href = '../html/login.html'
         }
     })
 
