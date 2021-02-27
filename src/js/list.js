@@ -74,7 +74,7 @@ function render(d) {
                         </div>
                         <p>
                             <a href="./car.html" class="btn btn-primary" role="button">查看购物车</a>
-                            <a href="http://test.cn/meizu/src/html/xiangqinye.html?id=${item.id}" class="btn btn-default" role="button">查看商品详情</a>
+                            <a href="../html/xiangqinye.html?id=${item.id}" class="btn btn-default" role="button">查看商品详情</a>
                         </p>
                     </div>
                 </div>
