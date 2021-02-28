@@ -48,10 +48,16 @@ $('#btn2').on('click', function () {
         async: false,
         success: function (res) {
             console.log(res);
-            alert('注册成功')
+            if(res.code == true){
+                alert('注册成功')
             // self.location = './login.html';
             open('../html/login.html')
             // location.href = '../html/login.html'
+            }
+            if(res.code == 0){
+                alert('账号已存在')
+            }
+            
         }
     })
 
