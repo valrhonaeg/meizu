@@ -83,17 +83,6 @@ body {
 #box main #main .main .f1 p:nth-of-type(3) {
   margin-bottom: 20px;
 }
-#box main #main .main .f1 p:nth-of-type(3) input {
-  width: 300px;
-  height: 48px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  transition: 1.5s;
-}
-#box main #main .main .f1 p:nth-of-type(4) {
-  margin-bottom: 20px;
-}
 #box main #main .main .f1 > button {
   width: 300px;
   height: 50px;
@@ -103,11 +92,11 @@ body {
   color: #fff;
   margin-bottom: 5px;
 }
-#box main #main .main .f1 p:nth-of-type(5) {
+#box main #main .main .f1 p:nth-of-type(4) {
   display: flex;
   justify-content: space-between;
 }
-#box main #main .main .f1 p:nth-of-type(5) > a {
+#box main #main .main .f1 p:nth-of-type(4) > a {
   color: #00aeff;
 }
 #box footer {
